@@ -1,5 +1,5 @@
 ﻿<link href="~/Content/HomeStyle.css" rel="stylesheet" />
-
+<script src="~/Content/JavaScriptSite.js"></script>
 @{
     ViewBag.Title = "Home Page";
 }
@@ -8,6 +8,13 @@
     <img src="~/Content/images/dobby.jpg" class="img-rounded" />
 </div>
 
+<div class="row" >
+        <h1 onmouseover="TextHover(this)" onmouseout="HoverOut(this)">Dobby's Closet</h1>
+</div>
+
 <div class="row">
-        <h1>Dobby's Closet</h1>
+    <p>You can learn more about Dobby here.</p>
+    <button type="button" onclick="Redirect()">Pottermore</button>
+    <output name="result" id="confirmResponse"></output>
+
 </div>

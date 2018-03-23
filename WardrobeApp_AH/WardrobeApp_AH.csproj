@@ -218,6 +218,7 @@
     <Content Include="Content\images\tyedyeshirt.jpg" />
     <Content Include="Content\images\whitesock.jpg" />
     <Content Include="Content\images\witchshoes.jpg" />
+    <Content Include="Content\JavaScriptSite.js" />
     <Content Include="Content\ShoeStyle.css" />
     <Content Include="Content\TopStyle.css" />
     <Content Include="favicon.ico" />

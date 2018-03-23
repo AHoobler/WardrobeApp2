@@ -1,0 +1,36 @@
+﻿<link href="~/Content/ShoeStyle.css" rel="stylesheet" />
+
+@model IEnumerable<WardrobeApp_AH.Models.Shoe>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Dobby has shoes to protect his socks.</h2>
+
+
+
+@foreach (var item in Model)
+{     
+    
+        <div class="thumbnail">
+            
+                <img src=" @Html.DisplayFor(modelItem => item.ShoePhoto)" class="img-rounded" />
+          
+                <p> @Html.DisplayFor(modelItem => item.ShoeName) </p>
+           
+                <p class="link">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ShoeID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ShoeID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ShoeID })
+                </p>
+           </div>
+       
+
+}
+
+<div class="col-md-12">
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+</div>

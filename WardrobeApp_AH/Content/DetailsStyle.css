@@ -1,0 +1,20 @@
+﻿body {
+    background:linear-gradient(white, lightpink);
+    color: darkgreen;
+    height: 1200px;
+    text-align: center;
+}
+
+
+img {
+    height: 250px;
+    width: 250px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+p {
+    font-size: x-large;
+}

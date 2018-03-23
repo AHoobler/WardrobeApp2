@@ -1,0 +1,27 @@
+﻿<link href="~/Content/DetailsStyle.css" rel="stylesheet" />
+@model WardrobeApp_AH.Models.Top
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>  @Html.DisplayFor(model => model.TopName) Details</h2>
+
+
+    <hr />
+
+
+
+    <img src=" @Html.DisplayFor(model => model.TopPhoto)" class=img-rounded />
+
+    <p> Color: @Html.DisplayFor(model => model.TopColor) </p>
+
+    <p> Season: @Html.DisplayFor(model => model.TopSeason) </p>
+
+    <p> Occassion: @Html.DisplayFor(model => model.TopOccasion) </p>
+
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

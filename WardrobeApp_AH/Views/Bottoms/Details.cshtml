@@ -1,0 +1,33 @@
+﻿<link href="~/Content/DetailsStyle.css" rel="stylesheet" />
+
+@model WardrobeApp_AH.Models.Bottom
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>
+    @Html.DisplayFor(model => model.BottomName) Details
+</h2>
+
+
+    <hr />
+
+            <img src="@Html.DisplayFor(model => model.BottomPhoto)" class="img-rounded" />
+
+           
+
+            <p> Color: @Html.DisplayFor(model => model.BottomColor) </p>
+
+
+            <p> Season: @Html.DisplayFor(model => model.BottomSeason) </p>
+     
+
+           <p> Occasion: @Html.DisplayFor(model => model.BottomOccasion) </p>
+
+ 
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

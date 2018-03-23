@@ -1,0 +1,29 @@
+﻿<link href="~/Content/AccStyle.css" rel="stylesheet" />
+
+@model IEnumerable<WardrobeApp_AH.Models.Accessory>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Dobby Has Many Accessories</h2>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+    <div class="thumbnail">
+        <img src=" @Html.DisplayFor(modelItem => item.AccessoryPhoto)" class="img-rounded" />
+        <p> @Html.DisplayFor(modelItem => item.AccessoryName)</p>
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = item.AccessoryID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.AccessoryID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.AccessoryID })
+        </p>
+
+    </div>
+    }
+</div>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+

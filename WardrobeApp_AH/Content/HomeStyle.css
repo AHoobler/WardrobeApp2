@@ -1,0 +1,21 @@
+﻿body {
+    background: linear-gradient(white, black);
+    text-align: center;
+    
+    height: 1200px;
+
+}
+
+.jumbotron{
+    background: none;
+
+}
+
+h1{
+    color: darkgreen;
+}
+
+img{
+    height: 350px;
+    width: 320px;
+}

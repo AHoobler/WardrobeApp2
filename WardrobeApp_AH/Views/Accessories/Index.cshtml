@@ -11,19 +11,23 @@
 <div class="row">
     @foreach (var item in Model)
     {
-    <div class="thumbnail">
-        <img src=" @Html.DisplayFor(modelItem => item.AccessoryPhoto)" class="img-rounded" />
-        <p> @Html.DisplayFor(modelItem => item.AccessoryName)</p>
-        <p>
-            @Html.ActionLink("Edit", "Edit", new { id = item.AccessoryID }) |
-            @Html.ActionLink("Details", "Details", new { id = item.AccessoryID }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.AccessoryID })
-        </p>
+        <div class="thumbnail">
+            <img src=" @Html.DisplayFor(modelItem => item.AccessoryPhoto)" class="img-rounded" />
+            <p> @Html.DisplayFor(modelItem => item.AccessoryName)</p>
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = item.AccessoryID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.AccessoryID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.AccessoryID })
+            </p>
 
-    </div>
+        </div>
     }
 </div>
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
 
+@foreach (var item in Model)
+{
+    if 
+}

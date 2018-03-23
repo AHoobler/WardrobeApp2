@@ -4,17 +4,28 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <img src="~/Content/images/dobby.jpg" class="img-rounded" />
+<div class="row">
+    <div class="jumbotron">
+        <img src="~/Content/images/dobby.jpg" class="img-rounded" />
+    </div>
 </div>
 
-<div class="row" >
-        <h1 onmouseover="TextHover(this)" onmouseout="HoverOut(this)">Dobby's Closet</h1>
+<div class="row"  id="mainsection">
+
+    <h1 onmouseover="TextHover(this)" onmouseout="HoverOut(this)">Dobby's Closet</h1>
+
 </div>
 
 <div class="row">
-    <p>You can learn more about Dobby here.</p>
-    <button type="button" onclick="Redirect()">Pottermore</button>
-    <output name="result" id="confirmResponse"></output>
-
+    <div class="col-md-6">
+        <p>You can learn more about Dobby here.</p>
+        <button type="button" onclick="Redirect()">Pottermore</button>
+        <output name="result" id="confirmResponse"></output>
+    </div>
+    <div class="col-md-6">
+        <p>To play a guessing game click here</p>
+        <button type="button" onclick="GetGame(this)">Game</button>
+        <p id="gameresult"></p>
+    </div>
 </div>
+

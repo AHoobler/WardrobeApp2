@@ -1,30 +1,50 @@
 ﻿body {
     background: linear-gradient(white, black);
     text-align: center;
-    
-    height: 1200px;
-
 }
 
-.jumbotron{
+.jumbotron {
     background: none;
-
+    width: 100%;
 }
 
-h1{
+h1 {
     color: darkgreen;
 }
 
-img{
+img {
     height: 350px;
     width: 320px;
 }
 
-.col-md-6{
+.col-md-6 {
     height: 350px;
-   
 }
 
-.row{
-    margin-top: 50px;
+.row {
 }
+
+div#mainsection.col-md-12 {
+    height: 1200px;
+}
+
+div#link.col-md-12{
+    height: 1200px;
+}
+
+
+div#photo.col-md-12 {
+    height: 1200px;
+    background: url('images/socks.jpeg')no-repeat center center;
+}
+
+div#game.col-md-12{
+    height: 1200px;
+}
+
+.scrollhanger {
+    background: url('images/hangers.jpeg')no-repeat center center;
+}
+
+
+

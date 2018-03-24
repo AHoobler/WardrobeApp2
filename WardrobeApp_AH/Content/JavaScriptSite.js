@@ -13,6 +13,7 @@
 
 function TextHover(x) {
     x.style.color = "red";
+    x.style.textsize = "60px";
 
 }
 
@@ -42,32 +43,37 @@ function GetGame() {
         gameArray.push(guess);
        
     }
-   
+
     if (guess == 'sock') {
         
-        getElementById('gameresult').innertext = 'You have guessed Dobbys favorite clothing item!';
+        getElementByTagName('p')[0].innertext = 'You have guessed Dobbys favorite clothing item!';
     }
 
     else if (gameArray != 'sock') {
-        getElementById('gameresult').innertext = 'You lose the game.';
+        getElementByTagName('p')[0].innertext = 'You lose the game.';
     }
 
 }
 
 
+function RemoveImg(x) {
+    x.style.display = "none";
+}
 
 
-
-
-
-
-
-
-
-
-
-function FUNCTION() {
+function AddFunction() { 
     var x = document.getElementById("mainsection");
     var userResponse = prompt('Welcome to Dobbys Closet. What is your name?');
     x.getElementsByTagName('h1')[0].innerText = 'Welcome to Dobbys Closet ' + userResponse;
 }
+
+function backgroundSwitch() {
+    if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+        document.getElementById("bgimg1").className = "scrollhanger";
+    }
+
+    else {
+        document.getElementById("bgimg1").className = "";
+    }
+}
+

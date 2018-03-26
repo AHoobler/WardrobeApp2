@@ -15,7 +15,7 @@
 {
     <div class="thumbnail">
 
-
+        <p></p>
 
         <img src="@Html.DisplayFor(modelItem => item.Accessory.AccessoryPhoto)" />
 
@@ -33,7 +33,28 @@
     </div>
 }
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+<div>
+    <p></p>
+    <p>
+        @Html.ActionLink("Create new outfit using Dobbys wardrobe items!", "Create")
+    </p>
+</div>
 
+<div id="a">
+    @foreach (var item in Model)
+    {
+        <div> @Html.DisplayFor(modelitem => item.Accessory.AccessorySeason)</div>
+
+        <div>@Html.DisplayFor(modelitem => item.Bottom.BottomSeason)</div>
+
+        <div> @Html.DisplayFor(modelitem => item.Shoe.ShoeSeason)</div>
+
+        <div>
+            @Html.DisplayFor(modelitem => item.Top.TopSeason)
+        </div>
+
+    }
+
+
+
+</div>

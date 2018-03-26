@@ -10,7 +10,7 @@
 </head>
 <body onload="">
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
@@ -26,13 +26,14 @@
                     <li>@Html.ActionLink("Bottoms", "Index", "Bottoms")</li>
                     <li>@Html.ActionLink("Shoes", "Index", "Shoes")</li>
                     <li>@Html.ActionLink("Tops", "Index", "Tops")</li>
+                    <li>@Html.ActionLink("Outfits", "Index", "Outfits")</li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="container-fluid body-content">
         @RenderBody()
-        <footer>
+        <footer class="col-md-12">
             <div id="footOG" onmouseover="SwapDivsWithHover('footOG','footswap')">
                 <p >Copywrite 2018</p>
             </div>

@@ -4,7 +4,7 @@
     ViewBag.Title = "Home Page";
 }
 
-<body onscroll="backgroundSwitch()" id="bgimg1">
+<body onscroll="backgroundSwitch()" id="bgimg1" onload="AddFunction()">
 
     <div class="col-md-12" id="mainsection">
         <div class="jumbotron">
@@ -13,21 +13,24 @@
         <h1 onmouseover="TextHover(this)" onmouseout="HoverOut(this)">Dobby's Closet</h1>
     </div>
 
-    <div class="col-md-12" id="link">
+    <div class="col-md-6" id="link">
         <p>You can learn more about Dobby here.</p>
         <button type="button" onclick="Redirect()">Pottermore</button>
         <output name="result" id="confirmResponse"></output>
     </div>
 
+    <div class=" col-md-6">
 
-    <div class="col-md-12" id="photo">
-        <p></p>
     </div>
 
-    <div class="col-md-12" id="game">
+    <div class="col-md-6">
+        <p id="gr">  Game Result  </p>
+    </div>
+
+    <div class="col-md-6" id="game">
         <p>To play a guessing game click here</p>
         <button type="button" onclick="GetGame(this)">Game</button>
-        <p id="gameresult"></p>
+        
     </div>
 
 </body>

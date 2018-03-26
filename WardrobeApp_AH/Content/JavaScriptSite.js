@@ -13,12 +13,13 @@
 
 function TextHover(x) {
     x.style.color = "red";
-    x.style.textsize = "60px";
+    x.style.fontsize = "100px";
 
 }
 
 function HoverOut(x) {
     x.style.color = "darkgreen";
+    x.stlye.fontsize = "100%";
 }
 
 
@@ -41,16 +42,19 @@ function GetGame() {
         var guess = prompt('Please guess Dobbys favorite clothing item');
         userResponse = confirm('Would you like to add another guess');
         gameArray.push(guess);
-       
+
     }
+
+    var fav = 'sock';
 
     if (guess == 'sock') {
-        
-        getElementByTagName('p')[0].innertext = 'You have guessed Dobbys favorite clothing item!';
+        //x.getElementById('gr').innerHTML = 'You have guessed Dobbys favorite clothing item!';
+        alert('You guessed Dobbys favorite item!');
     }
 
-    else if (gameArray != 'sock') {
-        getElementByTagName('p')[0].innertext = 'You lose the game.';
+    else if (guess != 'sock') {
+        //x.getElementById('gr').innerHTML = 'You lose the game.';
+        alert('You lose the game!');
     }
 
 }
@@ -61,7 +65,7 @@ function RemoveImg(x) {
 }
 
 
-function AddFunction() { 
+function AddFunction() {
     var x = document.getElementById("mainsection");
     var userResponse = prompt('Welcome to Dobbys Closet. What is your name?');
     x.getElementsByTagName('h1')[0].innerText = 'Welcome to Dobbys Closet ' + userResponse;
@@ -77,3 +81,18 @@ function backgroundSwitch() {
     }
 }
 
+
+
+function displayitem() {
+    var aTags = document.getElementsByTagName("a");
+    var searchText = "Summer";
+    var foundArray = new Array;
+
+
+    for (var i = 0; i < aTags.length; i++) {
+        if (aTags[i].innerHTML == summer) {
+            foundArray.push(atag);
+        }
+    }
+    console.log(foundArray);
+}

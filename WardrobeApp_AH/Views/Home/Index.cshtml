@@ -4,9 +4,9 @@
     ViewBag.Title = "Home Page";
 }
 
-<body onscroll="backgroundSwitch()" id="bgimg1" onload="AddFunction()">
+<body  onscroll="backgroundSwitch()" id="bgimg1" >
 
-    <div class="col-md-12" id="mainsection">
+    <div class="col-md-12" id="mainsection" onclick="AddFunction(this)">
         <div class="jumbotron">
             <img src="~/Content/images/dobby.jpg" class="img-rounded" onclick="RemoveImg(this)" />
         </div>
